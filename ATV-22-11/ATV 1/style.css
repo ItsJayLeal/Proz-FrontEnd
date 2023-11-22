@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 17px;
+    background-color: whitesmoke;
+}
+
+
+span{
+
+color: crimson;
+}
+
+.cont{
+    color:  #3498db; /* Adicione a cor desejada */
+    
+    
+}
+.botao {
+    background-color: rgb(62, 197, 62);
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+
+input[type="text"], textarea {
+    
+    border: 1px solid #3498db;}
