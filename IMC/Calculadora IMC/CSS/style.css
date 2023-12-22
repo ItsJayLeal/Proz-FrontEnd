@@ -1,0 +1,200 @@
+* {
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 19px;
+
+
+}
+
+/*Inico estilização da barra Nav e seu conteudo*/
+body {
+    margin: 0 auto;
+    background-color: #f4f8f9;
+    min-height: 100vh;
+}
+
+.barranav {
+
+    background-color: #f4f8f9;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    z-index: 1000
+}
+
+.escolhasnav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    /*Remover o circulo do li*/
+
+
+}
+
+.escolhasnav li {
+    color: #e99ddb;
+
+}
+
+
+.barranav li:hover {
+    /*Ao passar o mouse sobre o conteudo*/
+
+    color: rgb(255, 255, 255);
+}
+
+/*Fim estilização da barra Nav e seu conteudo*/
+
+.fora {
+
+    display: flex;
+    flex-direction: column;
+    /*Div em torno do conteúdo exceto a barra de navegação*/
+    flex: 1;
+    /* Ocupa todo o espaço disponível */
+}
+
+
+/*Inico estilização titulo,form e etc*/
+.intro {
+    margin-top: 66px;
+    text-align: center;
+}
+
+p+ {
+    color: #e99ddb;
+}
+
+h3 {
+    color: #e99ddb;
+}
+
+
+main {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+
+}
+
+
+.inform {
+    padding: 25px;
+    background-color: #e99ddb;
+    border-radius: 9%;
+    max-width: 21%;
+    box-shadow: 1px 2px 12px rgb(130, 115, 216);
+
+}
+
+
+.resultado {
+
+    background-color: #e99ddb;
+    padding: 25px;
+    border-radius: 9%;
+    width: 41%;
+    box-shadow: 1px 2px 12px rgb(130, 115, 216);
+
+}
+
+
+
+
+.resultado-texto {
+    color: #ffffff;
+    font-size: 21px;
+
+}
+
+/*Fim estilização titulo,form e etc*/
+
+
+/*Inico estilização footer*/
+
+.footer {
+
+    text-align: center;
+    padding: 10px;
+
+}
+
+.footer p {
+    font-size: 22px;
+    color: #e99ddb;
+}
+
+/*Fim estilização footer*/
+
+
+
+/*Media*/
+
+@media (max-width: 450px) {
+
+    /*Para celulares padrão*/
+    body {
+        font-size: 14px;
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+        height: 90%;
+    }
+
+
+}
+
+@media (width: 375px) {
+
+    /*Iphone SE*/
+    body {
+        font-size: 16px;
+        flex-direction: column;
+
+    }
+
+    input {
+        font-size: 16px;
+        width: 100%;
+    }
+
+
+    .inform {
+        width: 60%;
+    }
+
+
+
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    body {
+        font-size: 17px;
+        flex-direction: column;
+
+    }
+
+    input {
+        font-size: 16px;
+        width: 100%;
+    }
+
+
+
+}
+
+/*Fim Media*/

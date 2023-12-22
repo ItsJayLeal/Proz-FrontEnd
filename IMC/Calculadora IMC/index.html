@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+
+    <title>ATV</title>
+    <link rel="stylesheet" href="/Calculadora IMC/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--Fonte importada do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/Img/Docs-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="barranav">
+        <ul class="escolhasnav">
+            <li>Inicio <i class="fa-solid fa-house"></i></li>
+            <li>Sobre <i class="fa-solid fa-building"></i></li>
+            <li>Contato <i class="fa-solid fa-envelope"></i></li>
+
+
+        </ul>
+    </div>
+
+    <div class="fora">
+        <div class="intro">
+
+            <h3>Doc's Health - Cálculo IMC</h3>
+            <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para
+                calcular o peso ideal de cada pessoa. Diz-se que o indivíduo tem peso normal quando o resultado do IMC
+                está entre 18,5 e 24,9.</p>
+        </div>
+        <main>
+            <div class="inform">
+                <form method="get">
+
+                    <label for="Nome">Nome e sobrenome:</label> <br>
+                    <input name="Nome" type="text" placeholder="Digite seu nome" id="nome">
+                    <br><br>
+
+
+
+                    <label for="Nome Completo">Idade:</label> <br>
+                    <input name="Nome Completo" type="number" placeholder="Digite sua idade" id="idade">
+                    <br><br>
+
+                    <label for="Peso">Peso:</label> <br>
+                    <input name="Peso" type="number" placeholder="Digite seu peso" min="10" id="peso">
+                    <br><br>
+
+                    <label for="Altura">Altura:"Ex 1.76"</label> <br>
+                    <input name="Altura" type="text" min="140" placeholder="Digite sua altura" id="altura">
+                    <br><br>
+
+                    <button type="button" onclick="calc()">Calcular</button>
+            </div>
+
+            <div class="resultado">
+                <p id="resposta" class="resultado-texto"></p>
+            </div>
+            <script src="/Calculadora IMC/JS/Conta.js"></script>
+
+
+
+        </main>
+
+        <footer class="footer">
+            <p>Desenvolvido por João Pedro & Pedro.</p>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
